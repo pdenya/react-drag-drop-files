@@ -228,7 +228,7 @@ const FileUploader: React.FC<Props> = (props: Props): JSX.Element => {
         disabled={disabled}
         multiple={multiple}
       />
-      {true && (
+      {dragging && (
         <HoverMsg>
           <span>{hoverTitle || 'Drop Here'}</span>
         </HoverMsg>
